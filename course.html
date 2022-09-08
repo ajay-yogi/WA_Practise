@@ -115,7 +115,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 &emsp;  &emsp;  &emsp;  &emsp;  <button id="btncart"><a href="cart.html" style="font: bold 24px Arial; color:red;">Add-to-cart</a></button> &emsp;  &emsp;  			 
 <button type="button" style="font: bold 24px  Arial; color:green;"><a href="sucess.html">Purchase</a></button><br />
 	<script>
-		dataLayer.push({
+		window.dataLayer=window.dataLayer || []
+        window.dataLayer.push({
   event: "view_item",
   ecommerce: {
     items: [
