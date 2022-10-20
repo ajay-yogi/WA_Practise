@@ -105,7 +105,33 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 &emsp;  &emsp;  &emsp;  &emsp; &emsp;   <h1>&emsp;  &emsp;  &emsp;  &emsp; &emsp;Item Added to Cart</h1></br>
 
 &emsp;  &emsp;  &emsp;  &emsp;  &emsp;&emsp;  &emsp;  &emsp;  &emsp; &emsp; &emsp;  &emsp;  &emsp;  &emsp; &emsp; <button type="button" style="font: bold 24px  Arial; color:green;"><a href="sucess.html" id="btnp"> Purchase</a></button><br />
+	
 
+<script>
+	dataLayer.push({
+  event: "purchase",
+  ecommerce3: {
+      transaction_id: "T_12345",
+      affiliation: "Google Merchandise Store",
+      value: 25.42,
+      tax: 4.90,
+      shipping: 5.99,
+      currency: "USD",
+      coupon: "SUMMER_SALE",
+      items: [
+       {
+        item_id: "SKU_12345",
+        item_name: "Stan and Friends Tee",
+        affiliation: "Google Merchandise Store",
+        currency: "USD",
+        discount: 2.22,
+        item_brand: "Google",
+        price: 9.99,
+        quantity: 1
+      }]
+  }
+});
+	</script>
 	</body>
 
 </html>
